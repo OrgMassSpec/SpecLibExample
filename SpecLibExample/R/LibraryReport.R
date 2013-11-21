@@ -5,15 +5,8 @@ LibraryReport <- function(spectra = example.spec,
                           pdf.file = "SpecLibExample.pdf",
                           pdf.title = "SpecLibExample",
                           x.min = 40) {
-
-  ## TODO make more informative error messages:
-  ## TODO print which columns are absent
-  ## TODO, which spectra are missing, maybe make warning
   
-  require(grid)
-  require(png)
-
-
+  
   ## Extract structure files to temporary directory - not used
   ## unzip(zipfile = structures, exdir = tempdir())
   ## tmp.directory <- paste(tempdir(), "/struct/", sep = "")
