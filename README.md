@@ -4,4 +4,4 @@ Contains a vignette describing the general file structure and functionality of s
 
 SpecLibExample can be installed from the package source archive file (.tar.gz file) with the latest version number. See ?install.packages within R.
 
-The package is described at: http://nathandodder.github.io/libraries.html.
+The package is described at: http://OrgMassSpec.github.io/libraries.html.
