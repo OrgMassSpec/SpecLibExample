@@ -84,7 +84,7 @@ LibraryReport <- function(spectra = example.spec,
     ##           y = 0.65, gp = gpar(cex = 1.25)) 
 
     grid.text("Web Reference: ", x = 0.5, y = 0.6, gp = gpar(cex = 1.25))
-    grid.text("http://orgmassspecr.r-forge.r-project.org/",
+    grid.text("http://OrgMassSpec.github.io",
               y = 0.55, gp = gpar(cex = 1.25)) 
 
     session.info <- sessionInfo()
@@ -134,6 +134,13 @@ LibraryReport <- function(spectra = example.spec,
     pushViewport(viewport(layout = spec.layout))
     
     pushViewport(viewport(layout.pos.row = 1, name = "chemical.name"))
+    
+    
+    # Added
+    grid.rect(x = unit(0, "npc"), y = unit(1, "npc"), width = unit(0.65, "npc"), 
+              just = "left", height = unit(0.25, "npc"), gp = gpar(col = "black"))
+              
+              
     
     grid.text(paste("Name:", current.metadata$compound), 
               x = 0.025, y = 1, hjust = 0, gp = gpar(cex = 1.25))
@@ -250,6 +257,9 @@ LibraryReport <- function(spectra = example.spec,
                           y = unit(0.6, "npc"),
                           width = unit(0.4, "npc"),
                           height = unit(0.9, "npc")))
+                          
+    # Added
+    grid.rect(gp = gpar(col = "black"))
     
     ## Display raster image, code follows the example in png::readPNG
 
@@ -289,6 +299,12 @@ LibraryReport <- function(spectra = example.spec,
     ## Write fragment ion identifications
     
     pushViewport(viewport(layout.pos.col = 2))
+    
+    # Added
+    
+    grid.rect(height = unit(1.1, "npc"), gp = gpar(col = "black"))
+    
+    grid.lines(x = unit(c(0, 1), "npc"), y = unit(0.95, "npc"), gp = gpar(col = "black"))
 
     grid.text(c("m/z", "Identity"), x = unit(c(0.1, 0.2), "npc"), 
               y = unit(1, "npc"), gp=gpar(col="red"), hjust = 0)
