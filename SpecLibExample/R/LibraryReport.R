@@ -135,13 +135,9 @@ LibraryReport <- function(spectra = example.spec,
     
     pushViewport(viewport(layout.pos.row = 1, name = "chemical.name"))
     
-    
-    # Added
     grid.rect(x = unit(0, "npc"), y = unit(1, "npc"), width = unit(0.65, "npc"), 
               just = "left", height = unit(0.25, "npc"), gp = gpar(col = "black"))
-              
-              
-    
+               
     grid.text(paste("Name:", current.metadata$compound), 
               x = 0.025, y = 1, hjust = 0, gp = gpar(cex = 1.25))
 
@@ -258,7 +254,6 @@ LibraryReport <- function(spectra = example.spec,
                           width = unit(0.4, "npc"),
                           height = unit(0.9, "npc")))
                           
-    # Added
     grid.rect(gp = gpar(col = "black"))
     
     ## Display raster image, code follows the example in png::readPNG
@@ -300,17 +295,15 @@ LibraryReport <- function(spectra = example.spec,
     
     pushViewport(viewport(layout.pos.col = 2))
     
-    # Added
-    
     grid.rect(height = unit(1.1, "npc"), gp = gpar(col = "black"))
     
     grid.lines(x = unit(c(0, 1), "npc"), y = unit(0.95, "npc"), gp = gpar(col = "black"))
 
-    grid.text(c("m/z", "Identity"), x = unit(c(0.1, 0.2), "npc"), 
+    grid.text(c("m/z", "Identity"), x = unit(c(0.075, 0.2), "npc"), 
               y = unit(1, "npc"), gp=gpar(col="red"), hjust = 0)
 
     grid.text(current.spectrum$mz[!is.na(current.spectrum$identity)], 
-              x = 0.1, 
+              x = 0.075, 
               y = c(0.9, 0.8, 0.7, 0.6, 0.5,
                 0.4, 0.3, 0.2, 0.1, 0)[1:length(na.omit(current.spectrum$identity))], 
               hjust = 0)

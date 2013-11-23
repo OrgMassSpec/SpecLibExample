@@ -16,7 +16,7 @@
 "oxychlordane";"oxychlordane";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"legacy pesticide";"match to NIST 2008 library";1308;0.84;"C10H4Cl8O";"NA"
 "mirex";"mirex";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"legacy pesticide";"match to NIST 2008 library";1569;0.99;"C10Cl12";"NA"
 "mirex (Cl11) (tentative)";"mirexCl11";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"legacy pesticide";"manual identification";1500;0.94;"C10HCl11";"Degradation product or metabolite of mirex?"
-"dicofol";"dicofol";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"current use pesticide";"match to NIST 2008 library";1665;1.18;"C14H9Cl5O";"Isomer unknown."
+"unknown (possible dicofol)";"dicofol";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"unknown";"match to NIST 2008 library";1665;1.18;"C14H9Cl5O";"Matches dicofol spectrum, but lack of molecular ion makes identification uncertain."
 "phenanthrene";"phenanthrene";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"PAH";"match to NIST 2008 library";1149;0.89;"C14H10";"NA"
 "pyrene";"pyrene";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"PAH";"match to NIST 2008 library";1347;0.99;"C16H10";"NA"
 "tetra brominated biphenyl (tetra-BB)";"tetraBB";"southern CA sea lion blubber";"GCxGC-TOF, electron impact, 70 eV";"anthropogenic";"BB";"match to NIST 2008 library";1455;0.97;"C12H6Br4";"Isomer unknown."
