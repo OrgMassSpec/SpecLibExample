@@ -1,7 +1,7 @@
 Package: SpecLibExample
 Type: Package
 Title: Example OrgMassSpecR Mass Spectral Library
-Version: 0.5-11
+Version: 0.5-12
 Date: 2014-03-14
 Author: Nathan G. Dodder and Eunha Hoh
 Maintainer: Nathan Dodder <nathand@sccwrp.org>
